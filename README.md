@@ -54,9 +54,14 @@ GenF0.menu.pnum.RBOARD_F030C8T6.build.cmsis_lib_gcc=arm_cortexM0l_math
 <img align="top" src="rSTM32F030C8T6.board.jpg" />
 
 
+
 ## Running some tests
 
+
 <img align="top" src="rSTM32F030C8T6.sample0.jpg" />
-The ProMini+ running the Adafruit ILI9341 library over hardware SPI.
+
+
+The **ProMini+** running the Adafruit ILI9341 library over hardware SPI.
+
 
 _Video in progress..._
