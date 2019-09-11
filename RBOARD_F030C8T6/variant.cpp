@@ -61,24 +61,37 @@ const PinName digitalPin[] = {
 	PA_13,
 	PA_14,
 	// Right.side
-	PB_9,
-	PB_8,
-	PB_7,
-	PB_6,
-	PB_5,
-	PB_4,
-	PB_3,
-	PA_15,
-	PF_7,
-	PF_6,
-	PA_12,
-	PA_11,
+	PB_13,
+	PB_14,
+	PB_15,
+	PA_8,
 	PA_9,
 	PA_10,
-	PA_8,
-	PB_15,
-	PB_14,
-	PB_13,
+	PA_11,
+	PA_12,
+	PF_6,
+	PF_7,
+	PA_15,
+	PB_3,
+	PB_4,
+	PB_5,
+	PB_6,
+	PB_7,
+	PB_8,
+	PB_9,
+	// Duplicated pins in order to be aligned with PinMap_ADC
+	// A0 have to be greater than NUM_ANALOG_INPUTS
+	PA_0,  //D13/A0 ~ D0
+	PA_1,  //D14/A1 ~ D1
+	PA_2,  //D15/A2 ~ D2
+	PA_3,  //D16/A3 ~ D3
+	PA_4,  //D17/A4 ~ D4
+	PA_5,  //D18/A5 ~ D5
+	PA_6,  //D19/A6 ~ D6
+	PA_7,  //D20/A7 ~ D7
+	PB_0,   //D21/A8 ~ D8
+	PB_1,   //D21/A8 ~ D8
+	PB_2,   //D21/A8 ~ D8
 };
 
 #ifdef __cplusplus
@@ -128,7 +141,8 @@ WEAK void SystemClock_Config(void)
   {
     Error_Handler();
   }
-  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_I2C1;
+  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_USART1|RCC_PERIPHCLK_I2C1;
+  PeriphClkInit.Usart1ClockSelection = RCC_USART1CLKSOURCE_PCLK1;
   PeriphClkInit.I2c1ClockSelection = RCC_I2C1CLKSOURCE_HSI;
   if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
   {

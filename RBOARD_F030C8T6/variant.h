@@ -108,7 +108,7 @@ extern "C"{
 // This must be a literal
 // It is used with preprocessor tests (e.g. #if NUM_DIGITAL_PINS > 3)
 // so an enum will not work.
-#define NUM_DIGITAL_PINS        37
+#define NUM_DIGITAL_PINS        39
 
 // Allow to define Arduino style alias for analog input pin number --> Ax
 // All pins are digital, analog inputs are a subset of digital pins
@@ -124,7 +124,7 @@ extern "C"{
 #define NUM_ANALOG_INPUTS       12
 // Define digital pin number of the first analog input  (i.e. which digital pin is A0)
 // First analog pin value (A0) must be greater than or equal to NUM_ANALOG_INPUTS
-#define NUM_ANALOG_FIRST        23
+#define NUM_ANALOG_FIRST        37
 
 // Below ADC, DAC and PWM definitions already done in the core
 // Could be redefined here if needed
