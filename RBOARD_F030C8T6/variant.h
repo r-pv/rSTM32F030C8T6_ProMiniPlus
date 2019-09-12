@@ -121,7 +121,7 @@ extern "C"{
 // !!! It must be aligned with the number of analog PinName
 // !!! defined in digitalPin[] array in variant.cpp
 // !!!
-#define NUM_ANALOG_INPUTS       12
+#define NUM_ANALOG_INPUTS       10
 // Define digital pin number of the first analog input  (i.e. which digital pin is A0)
 // First analog pin value (A0) must be greater than or equal to NUM_ANALOG_INPUTS
 #define NUM_ANALOG_FIRST        37

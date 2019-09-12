@@ -81,17 +81,16 @@ const PinName digitalPin[] = {
 	PB_9,
 	// Duplicated pins in order to be aligned with PinMap_ADC
 	// A0 have to be greater than NUM_ANALOG_INPUTS
-	PA_0,  //D13/A0 ~ D0
-	PA_1,  //D14/A1 ~ D1
-	PA_2,  //D15/A2 ~ D2
-	PA_3,  //D16/A3 ~ D3
-	PA_4,  //D17/A4 ~ D4
-	PA_5,  //D18/A5 ~ D5
-	PA_6,  //D19/A6 ~ D6
-	PA_7,  //D20/A7 ~ D7
-	PB_0,   //D21/A8 ~ D8
-	PB_1,   //D21/A8 ~ D8
-	PB_2,   //D21/A8 ~ D8
+	PA_0,
+	PA_1,
+	PA_2,
+	PA_3,
+	PA_4,
+	PA_5,
+	PA_6,
+	PA_7,
+	PB_0,
+	PB_1,
 };
 
 #ifdef __cplusplus
