@@ -108,7 +108,7 @@ extern "C"{
 // This must be a literal
 // It is used with preprocessor tests (e.g. #if NUM_DIGITAL_PINS > 3)
 // so an enum will not work.
-#define NUM_DIGITAL_PINS        39
+#define NUM_DIGITAL_PINS        47
 
 // Allow to define Arduino style alias for analog input pin number --> Ax
 // All pins are digital, analog inputs are a subset of digital pins
