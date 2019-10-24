@@ -40,47 +40,49 @@ extern "C"{
 /*----------------------------------------------------------------------------
  *        Pins
  *----------------------------------------------------------------------------*/
-// USB connector on the top, MCU side
+//.with.the.USB.on.the.bottom.and.left-to-right-to-top.naming;
 // Left.Side
-#define PC13  0
-#define PC14  1
-#define PC15  2
-#define PA0   3
-#define PA1   4
-#define PA2   5
-#define PA3   6
-#define PA4   7
-#define PA5   8
-#define PA6   9
-#define PA7   10
-#define PB0   11
-#define PB1   12
-#define PB2   13
-#define PB10  14
-#define PB11  15
-#define PB12  16
+#define PB13   0
+#define PB14   1
+#define PB15   2
+#define PA8    3
+#define PA9    4
+#define PA10   5
+#define PA11   6
+#define PA12   7
+#define PF6    8
+#define PF7    9
+#define PA15   10
+#define PB3    11
+#define PB4    12
+#define PB5    13
+#define PB6    14
+#define PB7    15
+#define PB8    16
+#define PB9    17
 // Bottom.side
-#define PA13  17 //D10   - SWDIO
-#define PA14  18 //D11   - SWCLK
+//USB
 // Right.side
-#define PB13  19
-#define PB14  20
-#define PB15  21
-#define PA8   22
-#define PA9   23
-#define PA10  24
-#define PA11  25
-#define PA12  26
-#define PF6   27
-#define PF7   28
-#define PA15  29
-#define PB3   30
-#define PB4   31
-#define PB5   32
-#define PB6   33
-#define PB7   34
-#define PB8   35
-#define PB9   36
+#define PC13   18
+#define PC14   19
+#define PC15   20
+#define PA0    21
+#define PA1    22
+#define PA2    23
+#define PA3    24
+#define PA4    25
+#define PA5    26
+#define PA6    27
+#define PA7    28
+#define PB0    29
+#define PB1    30
+#define PB2    31
+#define PB10   32
+#define PB11   33
+#define PB12   34
+// top.side.stlink
+#define PA13   35
+#define PA14   36
 
 // Define pin names to match digital pin number --> Dx
 // It could be used with preprocessor tests (e.g. #if PXn == 3)
@@ -124,7 +126,7 @@ extern "C"{
 #define NUM_ANALOG_INPUTS       10
 // Define digital pin number of the first analog input  (i.e. which digital pin is A0)
 // First analog pin value (A0) must be greater than or equal to NUM_ANALOG_INPUTS
-#define NUM_ANALOG_FIRST        37
+#define NUM_ANALOG_FIRST        21
 
 // Below ADC, DAC and PWM definitions already done in the core
 // Could be redefined here if needed

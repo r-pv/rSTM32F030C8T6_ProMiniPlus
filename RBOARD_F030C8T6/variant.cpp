@@ -39,28 +39,8 @@ extern "C" {
 // to STM32 PinName (PX_n)
 const PinName digitalPin[] = {
 //PX_n, //Dx
+	//.with.the.USB.on.the.bottom.and.left-to-right-to-top.naming;
 	// Left.Side
-	PC_13,
-	PC_14,
-	PC_15,
-	PA_0,
-	PA_1,
-	PA_2,
-	PA_3,
-	PA_4,
-	PA_5,
-	PA_6,
-	PA_7,
-	PB_0,
-	PB_1,
-	PB_2,
-	PB_10,
-	PB_11,
-	PB_12,
-	// Bottom.side
-	PA_13,
-	PA_14,
-	// Right.side
 	PB_13,
 	PB_14,
 	PB_15,
@@ -79,8 +59,12 @@ const PinName digitalPin[] = {
 	PB_7,
 	PB_8,
 	PB_9,
-	// Duplicated pins in order to be aligned with PinMap_ADC
-	// A0 have to be greater than NUM_ANALOG_INPUTS
+	// Bottom.side
+//USB
+	// Right.side
+	PC_13,
+	PC_14,
+	PC_15,
 	PA_0,
 	PA_1,
 	PA_2,
@@ -91,6 +75,15 @@ const PinName digitalPin[] = {
 	PA_7,
 	PB_0,
 	PB_1,
+	PB_2,
+	PB_10,
+	PB_11,
+	PB_12,
+	// top.side.stlink
+	PA_13,
+	PA_14,
+	// Duplicated pins in order to be aligned with PinMap_ADC
+	// A0 have to be greater than NUM_ANALOG_INPUTS
 };
 
 #ifdef __cplusplus
