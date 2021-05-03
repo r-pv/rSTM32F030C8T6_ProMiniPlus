@@ -17,7 +17,7 @@ Pinout:
 
 ## Install
 
-**Update** STCore v2.0 includes support for this MCU, if you're using STCore v2.0 you don't need to install anything.
+**Update:** STCore v2.0 includes support for this MCU, if you're using STCore v2.0 you don't need to install anything.
 
 - This requires the [STM32 core for arduino](https://github.com/stm32duino/Arduino_Core_STM32/), the ST original.
 - I used this [guide to add the board](https://github.com/stm32duino/wiki/wiki/Add-a-new-variant-(board)), you can check it or continue with my suggestions to install the new board.
